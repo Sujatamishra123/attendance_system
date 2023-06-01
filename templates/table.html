@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Table </title> 
+        <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>     
+  <style>
+    body{
+  background-image: url('https://cutewallpaper.org/21x/hianxltb9/600-Free-Design-Background-Videos-HD-4K-Clips-Pixabay.jpg');
+        background-size: cover;
+        font-family: sans-serif;
+        margin-top: 40px;
+        height: 50vh;
+        padding: 0;
+        margin: 0;
+    }
+      </style>        
+    </head>
+   
+    <body>
+        <div align="center"style="color:blue; margin-top: 300px;">
+
+          
+
+           <table id="demo"> 
+            <!-- HEADER ROW -->
+             <tr>
+              {% for col in header %}
+              <th>{{ col }}</th>
+              {% endfor %}
+            </tr>
+          
+            <!-- DATA ROWS -->
+            {% for row in rows %}
+            <tr>
+              {% for col in row %}
+              <td>{{ col }}</td>
+              {% endfor %}
+            </tr>
+            {% endfor %} 
+           </table>  
+        </div>
+        <div class="mx-auto" style="width: 150px; margin-top: 200px;">
+            <a href="http://127.0.0.1:5000/">
+             <button type="button" class="btn btn-success">Back Home Page</button>
+          </a>
+          </div>
+    </body>
+</html>

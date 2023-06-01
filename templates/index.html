@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <title>FACE RECOGNITION + ATTENDANCE PROJECT</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body{
+  background-image: url('https://cutewallpaper.org/21x/hianxltb9/Best-Abstract-Backgrounds-Stock-Photos-Pictures-Royalty-.jpg');
+        background-size: cover;
+        font-family: sans-serif;
+        margin-top: 40px;
+        height: 50vh;
+        padding: 0;
+        margin: 0;
+    }
+      </style>
+</head>
+
+<body>
+<!-- As a link -->
+<nav class="navbar navbar-light " style="background-color: rgb(144, 230, 144);">
+  <a class="navbar-brand mx-auto" href="#">GIVE YOUR ATTENDANCE</a>
+</nav>
+<br>
+ <div class="mx-auto" style="width: 700px;">
+  <img src="{{ url_for('video_feed') }}">
+</div>
+
+<br><br>
+<div class="mx-auto" style="width: 150px;">
+  <a href="http://127.0.0.1:5000/">
+   <button type="button" class="btn btn-success" style="margin-top: 200px; background-color: rgb(61, 185, 92);">Back Home Page</button>
+</a>
+</div>
+<p class="mt-5 mb-3 text-muted text-center">&copy; 2019-2023 Batch</p>
+</body>
+</html>
